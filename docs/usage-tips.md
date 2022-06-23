@@ -82,6 +82,13 @@ link times are usually also long. Overly small test binaries in turn pay
 significant overhead from linking against Catch2 more often per compiled
 test case, and also make it hard/impossible to run tests in batches.
 
+Because there is no hard and fast rule for the right size of a test binary,
+I recommend having 1:1 correspondence between libraries in project and test
+binaries. (At least if it is possible, in some cases it is not.) Having
+a test binary for each library in project keeps related tests together,
+and makes tests easy to navigate by reflecting the project's organizational
+structure.
+
 
 ---
 
